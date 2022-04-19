@@ -2,6 +2,7 @@
 
 --> Crear un proyecto llamado first_app (1 Punto)
 --> Inicializar Git (1 Punto)
+
         claudio@Arrakis:git init
         Reinicializado el repositorio Git existente en /home/claudio/Biblioteca/EQ_Curso_Ruby_On_Rails/08_Desarrollo_Aplicaciones_Ruby_on_Rails/03_Aplicaciones_en_Rails/Dia_02/Desafio_Proyecto01/first_app/.git/
 
@@ -35,21 +36,26 @@ claudio@Arrakis:git add .
         invoke    test_unit
       
 --> Setear la página one como página de inicio (1 Punto)
+
         # Defines the root path route ("/")
         root "pages#one"
 
 --> Agregar un título h1 con tu nombre completo en la página de inicio (0.5 Punto)
+
         <h1>Claudio Andres Zeiss Martinez</h1>
 
 
 --> Ejecutar el comando rake routes en la terminal y obtener una captura de pantalla del resultado (0.5 Punto)
+
         imagen -> fisrtApp_Routes.png
 
 --> Insertar la imagen de la captura de pantalla obtenida a la página two (1 Punto)
+
         <h1>Imagen de rails routes</h1>
         <%= image_tag "fisrtApp_Routes.png" %>
 
 --> Añadir los cambios y hacer el segundo commit (0.5 Punto)
+
         claudio@Arrakis:git add .
         claudio@Arrakis:git commit -m "2022.04.19_01"
         [main e543da0] 2022.04.19_01
@@ -63,11 +69,14 @@ claudio@Arrakis:git add .
 
 --> Agregar el método three al controlador Pages (1 Punto)
         
+        app->controllers->applicacion_controller.rb
+        
           def three
           end
 
 --> Agregar un archivo llamado three.html.erb a la carpeta views del controlador pages (0.5 Punto)
-        three.html.erb
+
+        app->views->pages->three.html.erb
 
 --> En el archivo routes.rb agregar la ruta que apunta al controlador pages con el método three (1 Punto)
 
@@ -109,12 +118,14 @@ claudio@Arrakis:git add .
   </body>
 
 --> Añadir los cambios y hacer el cuarto commit (1 Punto)
+
         claudio@Arrakis:git add .
         claudio@Arrakis:git commit -m "2022.04.19_03"
         [main 574fc62] 2022.04.19_03
          1 file changed, 10 insertions(+)
 
 --> Crear un repositorio en GitHub (1 Punto)
+
         echo "# first_app" >> README.md
         git init
         git add README.md
@@ -124,5 +135,6 @@ claudio@Arrakis:git add .
         git push -u origin main
 
 --> Inicializar proyecto en Heroku y hacer push (2 Puntos)
+
         pagina Heroku --> https://non-startup.herokuapp.com/
       
