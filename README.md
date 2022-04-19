@@ -1,41 +1,42 @@
 
-Correo --> caraya.salazar@gmail.com
 
 --> Crear un proyecto llamado first_app (1 Punto)
 --> Inicializar Git (1 Punto)
-claudio@Arrakis:git init
-Reinicializado el repositorio Git existente en /home/claudio/Biblioteca/EQ_Curso_Ruby_On_Rails/08_Desarrollo_Aplicaciones_Ruby_on_Rails/03_Aplicaciones_en_Rails/Dia_02/Desafio_Proyecto01/first_app/.git/
+        claudio@Arrakis:git init
+        Reinicializado el repositorio Git existente en /home/claudio/Biblioteca/EQ_Curso_Ruby_On_Rails/08_Desarrollo_Aplicaciones_Ruby_on_Rails/03_Aplicaciones_en_Rails/Dia_02/Desafio_Proyecto01/first_app/.git/
 
 --> Añadir los cambios y hacer el primer committ (1 Punto)
 claudio@Arrakis:git add .
 
-claudio@Arrakis:git commit -m "2022.04.19_00"
-[main (commit-raíz) bedfc98] 2022.04.19_00
- 78 files changed, 1372 insertions(+)
- create mode 100644 .gitattributes
- create mode 100644 .gitignore
- create mode 100644 .ruby-version
- create mode 100644 Gemfile
-......
+        claudio@Arrakis:git commit -m "2022.04.19_00"
+        [main (commit-raíz) bedfc98] 2022.04.19_00
+        78 files changed, 1372 insertions(+)
+        create mode 100644 .gitattributes
+        create mode 100644 .gitignore
+        create mode 100644 .ruby-version
+        create mode 100644 Gemfile
+        ......
 
 --> Crear el controlador pages con las páginas one y two (2 Puntos)
-claudio@Arrakis:rails generate controller pages one two
-      create  app/controllers/pages_controller.rb
-       route  get 'pages/one'
+        
+        claudio@Arrakis:rails generate controller pages one two
+      
+        create  app/controllers/pages_controller.rb
+        route  get 'pages/one'
               get 'pages/two'
-      invoke  erb
-      create    app/views/pages
-      create    app/views/pages/one.html.erb
-      create    app/views/pages/two.html.erb
-      invoke  test_unit
-      create    test/controllers/pages_controller_test.rb
-      invoke  helper
-      create    app/helpers/pages_helper.rb
-      invoke    test_unit
+        invoke  erb
+        create    app/views/pages
+        create    app/views/pages/one.html.erb
+        create    app/views/pages/two.html.erb
+        invoke  test_unit
+        create    test/controllers/pages_controller_test.rb
+        invoke  helper
+        create    app/helpers/pages_helper.rb
+        invoke    test_unit
       
 --> Setear la página one como página de inicio (1 Punto)
-  # Defines the root path route ("/")
-  root "pages#one"
+        # Defines the root path route ("/")
+        root "pages#one"
 
 --> Agregar un título h1 con tu nombre completo en la página de inicio (0.5 Punto)
         <h1>Claudio Andres Zeiss Martinez</h1>
