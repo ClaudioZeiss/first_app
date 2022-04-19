@@ -1,6 +1,7 @@
 
 
 --> Crear un proyecto llamado first_app (1 Punto)
+
 --> Inicializar Git (1 Punto)
 
         claudio@Arrakis:git init
@@ -102,20 +103,22 @@ claudio@Arrakis:git add .
 --> Agregar un navbar al layout (2 Puntos)
 --> El navbar debe contener la clase navbar-inverse y su estructura sólo debe contener 3 links donde cada uno llevará a la página correspondiente (2 Puntos)
 
-        app/views/layouts/application.html.erb
+        app->views->layouts->application.html.erb
 
-  <body>
-  <!-- Barra de navegacion -->
-    <nav class="navbar-inverse"> 
-      <!-- Links --> 
-      <ul class="navbar-nav"> 
-        <li class="nav-item"><%= link_to "one", pages_one_path %></li> 
-        <li class="nav-item"><%= link_to "two", pages_two_path %></li> 
-        <li class="nav-item"><%= link_to "three", pages_three_path %></li> 
-      </ul> 
-    </nav> 
-    <%= yield %>
-  </body>
+        <body>
+        <!-- Barra de navegacion -->
+        <nav class="navbar-inverse"> 
+                <!-- Links --> 
+                <ul class="navbar-nav"> 
+                        <li class="nav-item"><%= link_to "one", pages_one_path %></li> 
+                        <li class="nav-item"><%= link_to "two", pages_two_path %></li> 
+                        <li class="nav-item"><%= link_to "three", pages_three_path %></li> 
+                </ul> 
+        </nav> 
+        <%= yield %>
+        </body>
+
+
 
 --> Añadir los cambios y hacer el cuarto commit (1 Punto)
 
