@@ -2,6 +2,8 @@
 
 --> Crear un proyecto llamado first_app (1 Punto)
 
+        rails new first_app
+
 --> Inicializar Git (1 Punto)
 
         claudio@Arrakis:git init
@@ -101,6 +103,7 @@ claudio@Arrakis:git add .
          create mode 100644 app/views/pages/three.html.erb
 
 --> Agregar un navbar al layout (2 Puntos)
+
 --> El navbar debe contener la clase navbar-inverse y su estructura sólo debe contener 3 links donde cada uno llevará a la página correspondiente (2 Puntos)
 
         app->views->layouts->application.html.erb
@@ -117,7 +120,6 @@ claudio@Arrakis:git add .
         </nav> 
         <%= yield %>
         </body>
-
 
 
 --> Añadir los cambios y hacer el cuarto commit (1 Punto)
