@@ -142,7 +142,9 @@ claudio@Arrakis:git add .
 --> Inicializar proyecto en Heroku y hacer push (2 Puntos)
         
    -- Cambiar base de datos sqlite3 por postgres (Heroku no soporta sqlite3) :
+   
       Reemplazar el codigo en archivo database.yml (path : config/database.yml) por
+      
         development:
         adapter: postgresql
                 usarname: claudio
@@ -169,16 +171,19 @@ claudio@Arrakis:git add .
                 pool: 5
                 timeout: 5000
         
-       En el archivo Gemfile, reemplazar la linea
+   En el archivo Gemfile, reemplazar la linea
+   
                 gem "sqlite3", "~> 1.4"
-         por
+   por
                 gem "pg"
         
-       Cargar la gema para trabajar con postgres en rails
+   Cargar la gema para trabajar con postgres en rails
+   
         bundle install
         
-       Creacion de las bases de datos en postgres
+   Creacion de las bases de datos en postgres
+   
         rails db:create  
           
-          pagina Heroku --> https://non-startup.herokuapp.com/
+        pagina Heroku --> https://non-startup.herokuapp.com/
       
