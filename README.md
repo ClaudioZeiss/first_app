@@ -175,6 +175,7 @@ claudio@Arrakis:git add .
    
                 gem "sqlite3", "~> 1.4"
    por
+   
                 gem "pg"
         
    Cargar la gema para trabajar con postgres en rails
@@ -184,6 +185,8 @@ claudio@Arrakis:git add .
    Creacion de las bases de datos en postgres
    
         rails db:create  
-          
-        pagina Heroku --> https://non-startup.herokuapp.com/
+        
+   Link Pagina Heroku
+   
+        https://non-startup.herokuapp.com/
       
