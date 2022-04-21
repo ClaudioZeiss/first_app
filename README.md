@@ -143,10 +143,10 @@ claudio@Arrakis:git add .
         
    -- Cambiar base de datos sqlite3 por postgres (Heroku no soporta sqlite3) :
    
-      Reemplazar el codigo en archivo database.yml (path : config/database.yml) por
+   Reemplazar el codigo en archivo database.yml (path : config/database.yml) por
       
         development:
-        adapter: postgresql
+                adapter: postgresql
                 usarname: claudio
                 password: desafio
                 port: 5432
